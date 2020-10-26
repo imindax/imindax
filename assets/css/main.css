@@ -1827,10 +1827,10 @@ input, select, textarea {
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
-
-		.box > :last-child,
-		.box > :last-child > :last-child,
-		.box > :last-child > :last-child > :last-child {
+		/* Custom: :not(.card)*/
+		.box > :last-child:not(.card),
+		.box > :last-child:not(.card) > :last-child:not(.card),
+		.box > :last-child:not(.card) > :last-child:not(.card) > :last-child:not(.card) {
 			margin-bottom: 0;
 		}
 
@@ -3872,7 +3872,7 @@ input, select, textarea {
 /* Custom Function */
 .card {
 	background-color: transparent;
-	padding-top: 50%;
+	/* padding-top: 50%; */
 	position: relative;
 	width: 30%;
 	margin-bottom: 5%;

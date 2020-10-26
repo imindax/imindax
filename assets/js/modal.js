@@ -1,5 +1,7 @@
 var demos = [
   "https://imindax.github.io/P20AU/",
+  "https://imindax.github.io/Snake/",
+  "https://imindax.github.io/Pixel-Battle/",
   "http://black.com/",
   "http://lifehacker.com/"
 ]
