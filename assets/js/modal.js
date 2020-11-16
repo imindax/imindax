@@ -1,7 +1,13 @@
 var demos = [
-  "https://imindax.github.io/P20AU/",
+  // Main
+  "https://imindax.github.io/Lost-in-Space/",
   "https://imindax.github.io/Snake/",
+  "https://imindax.github.io/Game-of-Dots/",
+
+  // Side
   "https://imindax.github.io/Pixel-Battle/",
+  
+  // Experimental
   "http://black.com/",
   "http://lifehacker.com/"
 ]
@@ -13,6 +19,7 @@ var modal = document.getElementById("myModal");
 var btns_demo = document.getElementsByClassName("btn_demo");
 
 var demo_iframe = document.getElementById("demo");
+var demo_herf = document.getElementById("demoOpen")
 
 var btn_reload = document.getElementById("reload");
 
@@ -25,6 +32,7 @@ Array.from(btns_demo).forEach (
   function(element, index, array) {
     element.onclick = function() {
       demo_iframe.src = demos[index];
+      demo_herf.setAttribute('href', demos[index]);
       modal.style.display = "block";
     }
   }
@@ -34,6 +42,7 @@ Array.from(btns_demo).forEach (
 btn_close.onclick = function() {
   modal.style.display = "none";
   demo_iframe.src = "";
+  demo_herf.setAttribute('href', "");
 }
 
 btn_reload.onclick = function() {

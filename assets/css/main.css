@@ -1841,6 +1841,12 @@ input, select, textarea {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
+			align-content: left;
+		}
+
+		.box.alt::after {
+			content: '';
+			width: 30%;
 		}
 
 	.box {
