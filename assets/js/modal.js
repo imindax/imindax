@@ -7,6 +7,7 @@ var demos = [
   // Side
   "https://imindax.github.io/Pixel-Battle/",
   "https://imindax.github.io/2D-Shooter/",
+  "https://imindax.github.io/Game-of-DOTs-2/",
   
   // Experimental
   "http://black.com/",
