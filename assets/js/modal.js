@@ -8,8 +8,11 @@ var demos = [
   "https://imindax.github.io/Pixel-Battle/",
   "https://imindax.github.io/2D-Shooter/",
   "https://imindax.github.io/Game-of-DOTs-2/",
+  "https://imindax.github.io/Slime-Pet/",
+  "https://imindax.github.io/Castle-Defense/",
   
   // Experimental
+  "https://imindax.github.io/Perlin-Noise-Terrain/",
   "http://black.com/",
   "http://lifehacker.com/"
 ]
