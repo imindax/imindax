@@ -17,6 +17,25 @@ var demos = [
   "http://lifehacker.com/"
 ]
 
+var descriptions = [
+  // Main
+  "Mouse",
+  "Mouse, WASD, Arrow Keys",
+  "Mouse, Left-Shift, Z, X, C",
+  
+  // Side
+  "Mouse",
+  "Mouse, WASD, R, E, G",
+  "Mouse, QWER",
+  "Mouse",
+  "Mouse",
+
+  // Experimental
+  "Mouse, WASD, Space",
+  "(WIP)",
+  "(WIP)"
+]
+
 // Get the modal
 var modal = document.getElementById("myModal");
 
@@ -27,7 +46,7 @@ var demo_iframe = document.getElementById("demo");
 var demo_herf = document.getElementById("demoOpen")
 
 var btn_reload = document.getElementById("reload");
-
+var ctrl_description = document.getElementById("control-description")
 
 // Get the <span> element that closes the modal
 var btn_close = document.getElementsByClassName("close")[0];
@@ -39,6 +58,7 @@ Array.from(btns_demo).forEach (
       demo_iframe.src = demos[index];
       demo_herf.setAttribute('href', demos[index]);
       modal.style.display = "block";
+      change_description(descriptions[index]);
     }
   }
 );
@@ -54,6 +74,9 @@ btn_reload.onclick = function() {
   demo_iframe.src = demo_iframe.src;
 }
 
+change_description = function(description) {
+  ctrl_description.innerHTML = description;
+}
 // When the user clicks anywhere outside of the modal, close it
 // window.onclick = function(event) {
 //   if (event.target == modal) {
